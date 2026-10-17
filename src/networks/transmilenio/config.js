@@ -26,6 +26,12 @@ export const troncalColors = {
 // Couleur utilisée quand une troncale n'est pas reconnue.
 export const defaultLineColor = "#808080";
 
+// --- Réglages de surbrillance d'une ligne ---
+export const dimmedLinesOpacity = 0.3;          // Opacité des autres lignes lors de la sélection d'un service (ex: 0.3)
+export const dimmedStationStrokeColor = "#cccccc"; // Couleur de contour des stations non desservies (ex: "#cccccc")
+export const dimmedStationOpacity = 0.3;        // Opacité des stations non desservies lors de la sélection (ex: 0.4)
+export const dimmedStationLabelOpacity = 0.05;   // Opacité des noms des stations non desservies (ex: 0.2)
+
 // Stations fermées à cause des travaux du métro (code cod_nodo de la station).
 // Pour fermer une station, ajoute son code ici ; pour la rouvrir, retire-le.
 export const closedStationCodes = [

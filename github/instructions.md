@@ -1,4 +1,4 @@
-# Instructions pour Copilot
+# Instructions pour une IA
 Il faut respecter les règles suivantes lors du code.
 
 Je suis débutant. Je dois comprendre et pouvoir justifier tout le code.

@@ -17,7 +17,8 @@ function getReadableTextColor(hexColor) {
 function buildServiceBadge(serviceCode) {
   const backgroundColor = troncalColors[serviceCode[0]] ?? defaultLineColor;
   const textColor = getReadableTextColor(backgroundColor);
-  return `<span class="service-badge" style="background:${backgroundColor};color:${textColor}">${serviceCode}</span>`;
+  // On utilise un bouton cliquable avec un attribut data-service pour capter le clic
+  return `<button class="service-badge" data-service="${serviceCode}" style="background:${backgroundColor};color:${textColor};border:none;padding:2px 5px;border-radius:3px;cursor:pointer;margin:2px;font-size:12px;">${serviceCode}</button>`;
 }
 
 // Fabrique le contenu du popup d'une station selon son état (fermée, temporaire ou ouverte).

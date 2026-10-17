@@ -1,5 +1,7 @@
 // Ce script analyse le GTFS et les services par station pour créer : public/data/routes-data.json.
 // Il contient pour chaque ligne (H17) : sa géométrie et la liste des codes de stations (cod_nodo).
+// Pour rester léger, il ne garde que les services présents dans servicios-por-estacion.json
+// et arrondit les coordonnées.
 // Usage : node scripts/build-routes-shapes.mjs
 
 import fs from "node:fs";
@@ -8,6 +10,15 @@ import readline from "node:readline";
 const gtfsFolder = "gtfs";
 const outputFile = "public/data/routes-data.json";
 const servicesByStationFile = "public/data/servicios-por-estacion.json";
+
+// --- Réglages de l'allègement (à modifier librement) ---
+const coordinateDecimals = 5; // décimales gardées pour chaque coordonnée (5 décimales = environ 1 m de précision)
+const maxFileSizeMegabytes = 25; // limite de Cloudflare Pages : le script avertit si le fichier la dépasse
+
+// Arrondit une coordonnée au nombre de décimales choisi (ex : -74.12108749 -> -74.12109).
+function roundCoordinate(value) {
+  return Number(value.toFixed(coordinateDecimals));
+}
 
 // Lit le fichier shapes.txt et retourne une Map : shape_id -> [[lon, lat], ...]
 async function getShapes() {
@@ -20,7 +31,7 @@ async function getShapes() {
     if (isFirstLine) { isFirstLine = false; continue; }
     const [shape_id, lat, lon] = line.split(",");
     if (!shapes.has(shape_id)) shapes.set(shape_id, []);
-    shapes.get(shape_id).push([parseFloat(lon), parseFloat(lat)]);
+    shapes.get(shape_id).push([roundCoordinate(parseFloat(lon)), roundCoordinate(parseFloat(lat))]);
   }
   return shapes;
 }
@@ -51,6 +62,7 @@ async function main() {
   });
 
   // 3. Associer chaque service à son tracé et ses stations
+  // On ignore les services absents de servicios-por-estacion.json (lignes zonales par exemple).
   const result = {};
   const tripsRaw = fs.readFileSync(`${gtfsFolder}/trips.txt`, "utf8").split("\n");
   tripsRaw.slice(1).forEach(line => {
@@ -60,7 +72,7 @@ async function main() {
       const shape_id = columns[2];
       const serviceName = routeNames.get(route_id);
 
-      if (serviceName && !result[serviceName]) {
+      if (serviceName && stationsByService[serviceName] && !result[serviceName]) {
         result[serviceName] = {
           stationCodes: stationsByService[serviceName] || [],
           geometry: {
@@ -72,8 +84,18 @@ async function main() {
     }
   });
 
-  fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));
-  console.log(`Fichier généré : ${outputFile} (${Object.keys(result).length} lignes)`);
+  // JSON compact (sans indentation) : le fichier est beaucoup plus petit.
+  fs.writeFileSync(outputFile, JSON.stringify(result));
+
+  const fileSizeMegabytes = fs.statSync(outputFile).size / (1024 * 1024);
+  console.log(
+    `Fichier généré : ${outputFile} (${Object.keys(result).length} lignes, ${fileSizeMegabytes.toFixed(2)} Mo)`
+  );
+  if (fileSizeMegabytes > maxFileSizeMegabytes) {
+    console.warn(
+      `ATTENTION : ce fichier dépasse ${maxFileSizeMegabytes} Mo, Cloudflare Pages refusera de le publier.`
+    );
+  }
 }
 
 main();

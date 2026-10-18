@@ -1,11 +1,45 @@
 /* Ce fichier définit les bases visuelles communes aux pages de cartes. */
 
+/* === Paramètres à modifier ici (valeurs par défaut de MapLibre × 1,5) === */
+
 :root {
   /* Évite de créer artificiellement des variantes de police absentes des fichiers chargés. */
   font-synthesis: none;
   /* Demande au navigateur d'ajuster le rendu du texte pour faciliter la lecture. */
   text-rendering: optimizeLegibility;
+  --taille-boutons: 40px;          /* taille commune */
+  --taille-zoom-plus: var(--taille-boutons);          /* bouton + (défaut 29px, 29 × 1,5 ≈ 44) */
+  --taille-zoom-moins: var(--taille-boutons);         /* bouton − */
+  --taille-localisation: var(--taille-boutons);      /* bouton de localisation */
+  --taille-boussole: var(--taille-boutons);  /* Boussole : liée à la taille du bouton +, donc elles changent ensemble */
+  --position-droite: 13px;          /* x : distance au bord droit de l'écran */
+  --position-bas: 39px;             /* y : distance au bord bas de l'écran */
+  --espace-entre-groupes: 12px;     /* vide entre le groupe +/− et la localisation */
 }
+
+
+/* On préfixe avec .maplibregl-map : 2 classes > 1 classe, donc on gagne toujours */
+.maplibregl-map .maplibregl-ctrl-bottom-right {
+  right: var(--position-droite);
+  bottom: calc(var(--position-bas) + env(safe-area-inset-bottom));
+}
+
+.maplibregl-map .maplibregl-ctrl-bottom-right .maplibregl-ctrl {
+  margin: 0 0 var(--espace-entre-groupes) 0;
+}
+
+/* Taille de chaque bouton : on ajoute .maplibregl-ctrl-group devant pour
+   être plus prioritaire que la règle par défaut de MapLibre (.maplibregl-ctrl-group button) */
+.maplibregl-ctrl-group .maplibregl-ctrl-zoom-in   { width: var(--taille-zoom-plus);    height: var(--taille-zoom-plus); }
+.maplibregl-ctrl-group .maplibregl-ctrl-zoom-out  { width: var(--taille-zoom-moins);   height: var(--taille-zoom-moins); }
+.maplibregl-ctrl-group .maplibregl-ctrl-geolocate { width: var(--taille-localisation); height: var(--taille-localisation); }
+/* .maplibregl-ctrl-group .maplibregl-ctrl-compass   { width: 44 px;     height: 44 px; } */
+.maplibregl-ctrl-group .maplibregl-ctrl-compass   { width: var(--taille-boussole);     height: var(--taille-boussole); }
+/* L'icône est une image de fond : on l'agrandit pour qu'elle suive le bouton */
+.maplibregl-ctrl-bottom-right .maplibregl-ctrl-icon {
+  background-size: 100% 100%;
+}
+
 
 /* Inclut bordures et espacements dans les dimensions déclarées des éléments. */
 * {

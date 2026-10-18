@@ -19,8 +19,8 @@ export function createBaseMap(mapElement) {
     attributionControl: { compact: true } // Affiche les crédits obligatoires du fond cartographique.
   });
 
-  // Ajoute les boutons de zoom et de déplacement dans le coin supérieur droit.
-  map.addControl(new maplibregl.NavigationControl(), "top-right");
+  // Ajoute les boutons de zoom et de déplacement dans le coin inférieur droit.
+  map.addControl(new maplibregl.NavigationControl(), "bottom-right");
 
   // Ajoute le bouton qui centre la carte sur la position actuelle de l'utilisateur.
   map.addControl(
@@ -29,7 +29,7 @@ export function createBaseMap(mapElement) {
       trackUserLocation: true, // Continue de suivre l'utilisateur lorsqu'il se déplace.
       showUserHeading: true // Affiche la direction vers laquelle l'utilisateur regarde.
     }),
-    "top-right" // Place le bouton sous les autres contrôles.
+    "bottom-right" // Place le bouton sous les autres contrôles.
   );
 
   // Referme le bouton compact des crédits après le chargement de la carte.

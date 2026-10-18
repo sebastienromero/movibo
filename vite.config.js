@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         transmilenio: resolve(__dirname, 'transmilenio.html'),
         pistes: resolve(__dirname, 'pistes.html'),
+        sitp: resolve(__dirname, 'sitp.html'),
       },
     },
   },

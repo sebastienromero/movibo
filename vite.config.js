@@ -8,6 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        blog: resolve(__dirname, 'blog.html'),
         transmilenio: resolve(__dirname, 'transmilenio.html'),
         pistes: resolve(__dirname, 'pistes.html'),
         sitp: resolve(__dirname, 'sitp.html'),

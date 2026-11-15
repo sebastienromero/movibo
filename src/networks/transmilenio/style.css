@@ -1,14 +1,4 @@
-/* Styles minimaux pour la page TransMilenio */
-.map-container {
-  height: 100vh;
-  width: 100vw;
-}
-
-.map {
-  height: 100%;
-  width: 100%;
-}
-
+/* Styles propres aux étiquettes de service sur la carte TransMilenio. */
 .service-badge {
   display: inline-block;
   margin: 2px 2px 0 0;

@@ -2,7 +2,6 @@
 // Il intervient au chargement de la page et réutilise le fond commun de shared/map.js.
 
 import "../../shared/style.css";
-import "./style.css";
 import { createBaseMap } from "../../shared/map.js";
 
 // Épaisseur du contour des pistes lorsque la carte est suffisamment zoomée.

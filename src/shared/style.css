@@ -13,7 +13,7 @@
   --taille-localisation: var(--taille-boutons);      /* bouton de localisation */
   --taille-boussole: var(--taille-boutons);  /* Boussole : liée à la taille du bouton +, donc elles changent ensemble */
   --position-droite: 13px;          /* x : distance au bord droit de l'écran */
-  --position-bas: 39px;             /* y : distance au bord bas de l'écran */
+  --position-bas: 0px;             /* y : distance au bord bas de l'écran */
   --espace-entre-groupes: 12px;     /* vide entre le groupe +/− et la localisation */
 }
 
@@ -52,9 +52,19 @@ body {
   /* Empêche la mise en page de devenir trop étroite sur les petits écrans. */
   min-width: 320px;
   height: 100%;
+  overflow: hidden;
   /* 100dvh suit la hauteur réellement visible, y compris sur les navigateurs mobiles. */
   min-height: 100dvh;
   margin: 0;
+}
+
+/* Le lien reste au-dessus de la carte sans ajouter de hauteur à la page. */
+header {
+  position: absolute;
+  z-index: 1;
+  top: env(safe-area-inset-top);
+  left: 0;
+  padding: 8px;
 }
 
 /* Cadre principal de la carte, dimensionné pour occuper toute la fenêtre. */

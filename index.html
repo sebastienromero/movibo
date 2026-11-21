@@ -20,6 +20,8 @@
       }
 
       .btn {
+        flex-direction: column;
+        gap: 12px;
         box-sizing: border-box;
         display: flex;
         aspect-ratio: 1;
@@ -32,6 +34,11 @@
         text-decoration: none;
         color: #333;
         font-weight: bold;
+      }
+          .btn img {
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
       }
 
       .btn:last-child:nth-child(odd) {
@@ -47,9 +54,18 @@
     </style>
   </head>
   <body>
-    <a href="blog.html" class="btn">Blog sobre justicia urbana</a>
-    <a href="pistes.html" class="btn">Ciclorrutas</a>
-    <a href="transmilenio.html" class="btn">Red TransMilenio</a>
-    <a href="sitp.html" class="btn">Paraderos SITP</a>
+    <a href="blog.html" class="btn">Ideas urbanas para Bogotá</a>
+    <a href="pistes.html" class="btn">
+      <img src="/data/images/ciclorrutas.jpeg" alt="" width="56" height="56" />
+      <span>Red ciclorrutas</span>
+    </a>
+    <a href="transmilenio.html" class="btn">
+      <img src="/data/images/transmilenio.svg" alt="" width="56" height="56" />
+      <span>Red TransMilenio</span>
+    </a>
+    <a href="sitp.html" class="btn">
+      <img src="/data/images/sitp.svg" alt="" width="56" height="56" />
+      <span>Paraderos SITP</span>
+    </a>
   </body>
 </html>

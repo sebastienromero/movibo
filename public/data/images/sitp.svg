@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="100"
+   height="72"
+   viewBox="0 0 1000 720"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Sitp Bogotá logo.svg">
+  <title
+     id="title4134">Sitp Bogotá logo</title>
+  <metadata
+     id="metadata1072">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Sitp Bogotá logo</dc:title>
+        <cc:license
+           rdf:resource="http://scripts.sil.org/OFL" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://scripts.sil.org/OFL">
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Reproduction" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Distribution" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Embedding" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Notice" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Attribution" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeRenaming" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/BundlingWhenSelling" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1070" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview1068"
+     showgrid="false"
+     inkscape:zoom="5.5155431"
+     inkscape:cx="84.972695"
+     inkscape:cy="30.335756"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:showpageshadow="false" />
+  <path
+     style="fill:#20376d;fill-opacity:1"
+     d="m 868.29677,155.32183 -0.741,33.3073 -371.3059,0.01 c 13.4732,10.8466 21.3386,27.345 21.3616,44.8085 -0.02,17.0732 -7.5329,33.2481 -20.4963,44.1144 l 66.7457,0 0,419.0897 98.1623,0 0,-419.0897 205.5197,0 0.754,27.8859 75.4043,-74.9367 z m -673.04737,24.1406 c -3.0863,9e-4 -6.2335,0.09 -9.4463,0.16 -47.2812,1.5284 -79.885,14.8477 -109.176105,44.6035 -20.6702,20.9981 -33.5102,47.4863 -38.7825,80.0082 -3.3992,20.9681 -2.2154,53.3602 2.5365,69.4119 10.7263,36.2334 33.2131,62.6783 69.222505,81.4059 15.8296,8.2328 30.3033,13.5254 56.1801,20.5429 43.5485,11.8098 64.6515,23.2405 77.179,41.8082 6.8533,10.1581 9.1664,18.2921 9.1664,32.22 0,21.0733 -5.963,36.1102 -19.1904,48.3911 -12.7155,11.8051 -29.3843,17.7212 -50.0554,17.7682 -20.9504,0.09 -34.9423,-5.5455 -51.0036,-20.3895 -16.5717,-15.3162 -46.122405,-36.5448 -46.122405,-36.5448 0,0 -73.1587,49.2922 -74.158,50.2178 -0.6017,0.555 3.5768,4.8476 9.2856,9.5354 5.7088,4.6878 19.9299,17.9874 31.6032,29.5535 28.9934,28.7287 43.178701,38.5068 68.979005,47.5494 11.6377,4.0783 28.3718,7.802 43.1118,9.5909 9.3673,1.1362 46.1049,-0.527 57.7036,-2.6091 34.2267,-6.1504 64.14287,-21.6688 86.88687,-45.0719 32.1282,-33.0581 47.6228,-76.4153 46.0033,-128.7258 -0.7931,-25.6172 -3.5181,-38.4277 -12.0216,-56.5365 -18.6587,-39.7351 -51.7738,-62.0077 -121.19247,-81.5028 -27.9246,-7.8424 -39.9447,-12.1135 -53.4908,-19.0107 -31.2646,-15.92 -42.731,-35.4631 -36.5362,-62.2748 4.0309,-17.4456 12.8932,-29.5385 26.8153,-36.5918 9.9439,-5.0367 19.1091,-6.6009 34.2667,-5.8484 16.5088,0.818 25.2289,3.9776 35.6009,12.8867 8.5742,7.3646 19.6572,13.2949 47.392,25.3642 l 19.23447,8.3692 59.03,-60.4634 c 0,-0.404 -4.0293,-2.7426 -8.9539,-5.1956 -13.725,-6.838 -28.9299,-17.6319 -42.3631,-30.0727 -28.99507,-26.8532 -61.41007,-38.5585 -107.70447,-38.5472 z m 215.87007,9.1724 0.01,18.6627 c 3.6395,-7.2311 8.7512,-13.5921 14.9959,-18.6627 z m 0.05,71.1096 0.01,17.7842 14.0968,0.01 c -5.8315,-4.907 -10.6303,-10.9567 -14.1098,-17.7889 z m 330.4404,74.2548 0,163.2201 -23.8773,0 0,61.987 23.8773,0 0,137.4505 70.3055,0 0,-137.0367 30.8415,-0.799 c 47.8801,-1.2397 73.0691,-5.4986 95.1777,-16.0969 9.5787,-4.5918 13.1773,-7.3571 23.911,-18.3786 14.3279,-14.7124 20.1758,-24.6231 25.9785,-44.0194 3.2162,-10.7507 3.6238,-14.2995 3.705,-32.2915 0.08,-17.1089 -0.365,-21.823 -2.8837,-30.7067 -11.2777,-39.7831 -37.862,-67.9812 -74.8006,-79.3404 -9.5158,-2.9261 -11.5646,-3.0061 -90.9857,-3.4924 z m -330.3031,0.169 0,362.492 96.5276,0 1.6348,-362.492 z m 400.6086,63.0771 35.4843,0.546 c 32.9203,0.508 36.0303,0.771 43.0471,3.5723 21.1371,8.4482 33.4378,32.9762 29.1808,58.1947 -3.4533,20.4573 -14.2595,31.7836 -34.4869,36.1468 -4.1361,0.894 -20.6526,1.5162 -40.1271,1.5162 l -33.0982,0 z"
+     id="path4138"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccsssssssssssscssssssssssssssscccssscccccccccccccccccssssssccccccccssssscc" />
+  <path
+     style="opacity:1;fill:#f8df15;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.61142853"
+     d="m 461.27287,9.6433225 a 43.775098,44.469282 0 0 0 -43.7751,44.4699005 43.775098,44.469282 0 0 0 43.7751,44.469 43.775098,44.469282 0 0 0 43.7751,-44.469 43.775098,44.469282 0 0 0 -43.7751,-44.4699005 z m 0.751,99.8531975 a 33.826211,34.362623 0 0 0 -33.8262,34.36271 33.826211,34.362623 0 0 0 33.8262,34.3626 33.826211,34.362623 0 0 0 33.8262,-34.3626 33.826211,34.362623 0 0 0 -33.8262,-34.36271 z m -1.026,81.10591 a 21.887547,22.234639 0 0 0 -21.8875,22.235 21.887547,22.234639 0 0 0 21.8875,22.235 21.887547,22.234639 0 0 0 21.8876,-22.235 21.887547,22.234639 0 0 0 -21.8876,-22.235 z"
+     id="path4175"
+     inkscape:connector-curvature="0" />
+</svg>
